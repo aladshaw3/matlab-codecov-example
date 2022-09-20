@@ -2,7 +2,7 @@ classdef SolverTest < matlab.unittest.TestCase
     % Copyright 2021 The MathWorks, Inc.
     methods(Test)
         function realSolution(testCase)
-            actSolution = quadraticSolver(1,-3,2);
+            actSolution = quadraticSolver(1,-3,3);
             expSolution = [2 1];
             testCase.verifyEqual(actSolution,expSolution)
         end
